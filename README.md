@@ -1,4 +1,4 @@
-# VidToFrame
+# ExtractFrameFromVid
 This code reads a .MOV video and saves frames from this video.  
 Make sure your videos are in two different folders with Cam_0 and Cam_1 as name.
 Change *video_path* to select the video you are working on.  
