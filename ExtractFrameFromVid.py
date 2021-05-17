@@ -35,7 +35,7 @@ print('Number of frames = ' + str(frame_count))
 print('Duration (s) = ' + str(duration))
 
 # Choix Calibration ou Essai
-calibration = True #vrai si video de calibration, Faux si video de test traction
+calibration = config.calibration #vrai si video de calibration, Faux si video de test traction
 if calibration:
     #Time code des changements de position de la plaque de calibration
     #A modifier a chaque video
