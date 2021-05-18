@@ -35,7 +35,7 @@ print('Number of frames = ' + str(frame_count))
 print('Duration (s) = ' + str(duration))
 
 # Choix Calibration ou Essai
-calibration = config.calibration #vrai si video de calibration, Faux si video de test traction
+calibration = config.calibration 
 if calibration:
     #Time code des changements de position de la plaque de calibration
     #A modifier a chaque video
@@ -60,4 +60,6 @@ for nbframe in liste_nbframe:
     cv2.imwrite(os.path.join(Save_path , FrameName + str(i).zfill(4) + suffix + ".png"), frame)
     cv2.waitKey(1)
     i += 1
+    
+print('Number of frames saved: ', i)    
 vidcap.release()
